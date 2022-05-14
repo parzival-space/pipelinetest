@@ -27,7 +27,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Pre-Build
-        run: preBuild.sh
+        run: ./preBuild.sh
       # Runs a set of commands using the runners shell
       - name: Post-Build
-        run: postBuild.sh
+        run: ./postBuild.sh
