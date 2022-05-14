@@ -27,7 +27,12 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Pre-Build
-        run: ./preBuild.sh
+        run: |
+        - chmod +x ./preBuild.sh
+        - ./preBuild.sh
+
       # Runs a set of commands using the runners shell
       - name: Post-Build
-        run: ./postBuild.sh
+        run: |
+        - chmod +x ./postBuild.sh
+        - ./postBuild.sh
